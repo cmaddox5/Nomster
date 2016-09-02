@@ -3,8 +3,35 @@
   <i><%= @place.address %></i><br /><br />
   <p><%= @place.description %></p><br />
 
+<% if @place.latitude.present? && @place.longitude.present? %>
+  <script>
+
+    function initMap() {
+      var myLatLng = {lat: <%= @place.latitude %>, lng: <%= @place.longitude %>};
+
+      var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 12,
+        center: myLatLng
+      });
+
+      var marker = new google.maps.Marker({
+        position: myLatLng,
+        map: map,
+        title: 'Hello World!'
+      });
+    }
+
+  </script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCaij8ycWU8IAYfZ1GxCgG8FFU8eXQfLjE&callback=initMap">
+  </script>
+
+  <div id="map"></div>
+<% end %>
+
+<br />
+
   <% if @place.user.present? %>
-  <small><%= @place.user.email %></small>
+    <small><%= @place.user.email %></small>
   <% end %>
 
   <div class="pull-right">

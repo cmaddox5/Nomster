@@ -43,3 +43,5 @@ gem 'spring',        group: :development
 gem 'rails_12factor', group: :production
 
 gem 'will_paginate', '~> 3.0.5'
+
+gem 'simple_form'

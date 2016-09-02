@@ -70,3 +70,10 @@ body {
 .custom-pagination a:hover, .custom-pagination a:focus {
   text-decoration: underline; 
 }
+
+.field_with_errors {
+  color: red;
+  background-color: pink;
+  border-radius: 3px;
+  padding: 8px;
+}

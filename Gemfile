@@ -55,3 +55,5 @@ gem 'figaro', '>= 1.0.0'
 gem 'carrierwave'
 
 gem 'owlcarousel-rails'
+
+gem 'fog'

@@ -1,4 +1,4 @@
-Rails.application.configure do
+Nomster::Application.configure do
 
   ActionMailer::Base.smtp_settings = {
     :address        => 'smtp.sendgrid.net',
@@ -9,7 +9,7 @@ Rails.application.configure do
     :domain         => 'heroku.com',
     :enable_starttls_auto => true
   }
-    
+
   config.action_mailer.default_url_options = { host: 'nomster-christian-maddox.herokuapp.com' }
   # Settings specified here will take precedence over those in config/application.rb.
 

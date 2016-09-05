@@ -27,6 +27,7 @@ body {
   background: url('/assets/blackorchid.png');
   border-radius: 0;
   box-shadow: 0px 1px 5px #2a2a2a;
+  margin-bottom: 0;
 }
 
 .navbar-inverse .navbar-brand {
@@ -107,6 +108,29 @@ blockquote p {
   display: inline;
 }
 
-.place-img {
-  height: auto;
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    line-height: 1;
+}
+
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+    max-height: 550px;
+    width: 100%;
+}
+
+.carousel-caption {
+    font-family: 'amatic_scregular', sans-serif;
+    font-size: 60px;
+    font-weight:100;
+    text-shadow: rgba(0,0,0,0.95) 2px 2px;
+    background-color: rgba(0,0,0,0.5);
+    width:100%;
+    position:absolute;
+    left:0;
+}
+
+.carousel {
+  box-shadow: 0px 3px 8px #2a2a2a;
 }

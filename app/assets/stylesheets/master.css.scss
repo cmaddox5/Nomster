@@ -11,7 +11,6 @@
   margin-top: 10px;
   margin-bottom: 15px;
   padding: 20px;
-  font-size: 15px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -40,15 +39,15 @@ body {
 .custom-pagination {
   text-align: right;
   padding: 5px;
-  cursor: default; 
+  cursor: default;
 }
 
 .custom-pagination a, .custom-pagination span {
-  padding: 0.2em 0.3em; 
+  padding: 0.2em 0.3em;
 }
 
 .custom-pagination .disabled {
-    color: #aaaaaa; 
+    color: #aaaaaa;
 }
 
 .custom-pagination .current {
@@ -60,17 +59,17 @@ body {
   height: 1.4em;
   line-height: 1.5;
   border-radius: 1em;
-  text-shadow: rgba(255, 255, 255, .8) 1px 1px 1px; 
+  text-shadow: rgba(255, 255, 255, .8) 1px 1px 1px;
   padding-right: 6px;
 }
 
 .custom-pagination a {
   text-decoration: none;
-  color: black; 
+  color: black;
 }
 
 .custom-pagination a:hover, .custom-pagination a:focus {
-  text-decoration: underline; 
+  text-decoration: underline;
 }
 
 .field_with_errors {

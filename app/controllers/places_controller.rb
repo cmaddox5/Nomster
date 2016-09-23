@@ -52,10 +52,6 @@ class PlacesController < ApplicationController
       return render text: 'Not Allowed', status: :forbidden
     end
 
-    @place.comments.each do |comment|
-      comment.destroy
-    end
-
     @place.destroy
     redirect_to root_path
   end
